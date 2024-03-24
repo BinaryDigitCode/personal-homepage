@@ -1,0 +1,42 @@
+@font-face { 
+    font-family: ChiKareGo2; src: url('fonts/ChiKareGo2.ttf');
+} 
+* { 
+    font-family: ChiKareGo2; 
+} 
+h2 {
+    color: var(--color-primary);
+} 
+h3 {
+    color: var(--color-secondary);
+} 
+/* Colors override */
+@media (prefers-color-scheme: light){
+:root {
+    --color-background: #FFF7FC;
+    --color-primary: #5755FE;
+    --color-secondary: #8B93FF;
+  }
+}
+@media (prefers-color-scheme: dark){
+:root {
+    --color-primary: #5755FE;
+    --color-secondary: #8B93FF;
+  }
+}
+
+/* original colors:
+--color-primary: #2c62af;
+--color-secondary-dark: #263342;
+--color-secondary: #cfdef3;
+--color-tertiary: #edf2f6;
+--color-background: #fff;
+--color-text: #0c0c0c;
+--color-border: #0c0c0c;
+--color-grey: #f1f1f1;
+--color-dark-grey: #ababab;
+--color-darker-grey: #818181;
+--color-green: #8ae77a;
+--color-red: #dc4e4e;
+--color-yellow: #eac66a;
+--offset-text-color: #f1f1f1; */
