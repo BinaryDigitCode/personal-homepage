@@ -1,29 +1,76 @@
 @font-face { 
-    font-family: ChiKareGo2; src: url('fonts/ChiKareGo2.ttf');
+    font-family: Retro; src: url('fonts/ChiKareGo2.ttf');
 } 
-* { 
-    font-family: ChiKareGo2; 
+
+h1 {
+    font-family: Retro; 
+    color: var(--color-primary);
+    font-size: 2.8em;
+    margin-bottom: 6px;
 } 
 h2 {
-    color: var(--color-primary);
-} 
-h3 {
+    font-family: Retro; 
     color: var(--color-secondary);
 } 
+h3 {
+    font-family: Retro; 
+    color: var(--color-tertiary);
+}
+samp,
+aside {
+    color: black;
+}
+
 /* Colors override */
 @media (prefers-color-scheme: light){
 :root {
-    --color-background: #FFF7FC;
-    --color-primary: #5755FE;
-    --color-secondary: #8B93FF;
+    --color-primary: #009ddc;
+    --color-secondary: #e03a3e;
+    --color-tertiary: #fdb827;
+    --font-size:1rem;
   }
 }
 @media (prefers-color-scheme: dark){
 :root {
-    --color-primary: #5755FE;
-    --color-secondary: #8B93FF;
+    --color-primary: #009ddc;
+    --color-secondary: #e03a3e;
+    --color-tertiary: #fdb827;
+    --font-size:1rem;
   }
 }
+
+/*CSS-Tricks https://codepen.io/team/css-tricks/pen/gOXMgxR*/
+
+a {
+text-decoration: none;
+  background:
+    linear-gradient(
+      to right,
+      rgb(0, 157, 220),
+      rgb(0, 157, 220)
+    ),
+    linear-gradient(
+      to right,
+        rgb(97, 187, 70),
+        rgb(245, 130, 31),
+        rgb(224, 58, 62),
+        rgb(150, 61, 151),
+        rgb(0, 157, 220)
+
+/*      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)*/
+  );
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:hover {
+  background-size: 0 2px, 100% 2px;
+}
+
 
 /* original colors:
 --color-primary: #2c62af;
